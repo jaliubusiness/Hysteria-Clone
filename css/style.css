@@ -492,6 +492,7 @@ body h1, h2, p {
         max-width: 100%;
         height: auto;
         box-shadow: none;
+        margin: 30px 40px;
     }
 
     #get-tickets-button {
@@ -609,11 +610,38 @@ body h1, h2, p {
         font-size: 2em;
     }
 
-    #girl {
-        height: 40vh;
+    #about-sin-é-wrap {
+        display: flex;
+        justify-content: center;
+        position: relative;
     }
 
+    #about-sin-é-wrap > *{
+        margin: 40px 0px;
+    }
+
+    #about-sin-é {
+        position: absolute;
+        width: 60%;
+        background: transparent;
+        padding-top: 40px;
+    }
+
+    #about-sin-é h1, 
+    #about-sin-é p {
+        color: var(--card-color);
+    }
+
+    #girl {
+        object-fit: cover;
+        object-position: 50% 50%;
+        height: auto;
+        width: 800px;
+        aspect-ratio: 1/1;
+        filter: blur(9px);
+    }
 }
+
 @media only screen and (min-width: 1024px) {
     #about-sin-é .yellow-tape {
         display: none;
@@ -626,10 +654,7 @@ body h1, h2, p {
     }
 
     #about-sin-é {
-        position: absolute;
-        width: 60%;
         height: 90%;
-        background: transparent;
     }
 
     #about-sin-é h1, 
@@ -647,13 +672,10 @@ body h1, h2, p {
     }
 
     #girl {
-        height: auto;
         min-width: 706px;
         width: 90%;
         margin: 40px 0px;
         max-height: 831px;
-        object-fit: cover;
-        object-position: 50% 50%;
         filter: blur(7px);
     }
 
@@ -683,7 +705,7 @@ body h1, h2, p {
         width: 30%;
         height: 831px;
         padding: 25px 50px;
-        position: static;
+        position: relative;
         background: var(--card-color);
     }
 
@@ -694,6 +716,7 @@ body h1, h2, p {
 
     #about-sin-é .yellow-tape {
         display: block;
+        
     }
     #about-sin-é p {
         font-size: 0.8em;
@@ -714,6 +737,12 @@ body h1, h2, p {
     
     #about-sin-é p {
         font-size: 0.9em;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    #about-sin-é p {
+        font-size: 1em;
     }
 }
 /*-- ---------------------------------------->
@@ -751,7 +780,10 @@ body h1, h2, p {
     }
 }
 @media only screen and (min-width: 768px) {
-
+    #our-theme-nights .our-theme-nights-card {
+        padding: 25px 80px;
+        margin: 45px 0px;
+    }
 }
 @media only screen and (min-width: 1024px) {
 

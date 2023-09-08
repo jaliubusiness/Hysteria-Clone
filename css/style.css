@@ -29,7 +29,7 @@ body h1, h2, p {
 }
 
 #hero {
-    background: url("/images/Backdrop.jpg");
+    background: url("/images/Backdrop.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -58,6 +58,9 @@ body h1, h2, p {
         z-index: 0;
     }
 
+    #mobile-logo {
+        width: 120px;
+    }
     #main {
         background-color: #7c1b1c;
         margin-bottom: 50px;
@@ -499,7 +502,7 @@ body h1, h2, p {
         position: relative;
         bottom: 0;
         margin: auto 0;
-        max-width: 81px;
+        max-width: 100px;
         height: 28px;
         font-size: 0.9em;
         text-align: center;
@@ -534,6 +537,7 @@ body h1, h2, p {
     #see-all-events-button {
         margin-bottom: 30px;
     }
+
 }
 @media only screen and (min-width: 1800px) {
 
@@ -678,8 +682,6 @@ body h1, h2, p {
         max-height: 831px;
         filter: blur(7px);
     }
-
-
 }
 @media only screen and (min-width: 1300px) {
     #about-sin-é-wrap {
@@ -795,8 +797,8 @@ body h1, h2, p {
         columns: 2; 
     }
 
-    .our-theme-nights-card {
-        padding-top: 50px;
+    #our-theme-nights .our-theme-nights-card {
+        padding: 30px;
         width: 40%;
     }
 
@@ -837,7 +839,7 @@ body h1, h2, p {
     }
 
     .our-theme-nights-card p {
-        padding: 20px 15px;
+        padding: 40px 15px;
     }
 }
 

@@ -29,7 +29,7 @@ body h1, h2, p {
 }
 
 #hero {
-    /* background: url("/images/Backdrop.webp"); */
+    background: url("/images/Backdrop.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

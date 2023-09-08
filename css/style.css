@@ -1,0 +1,943 @@
+
+:root {
+    --card-color: #FFF9E2;
+    --reddish-color: #BA292A;
+    --navbar-color: #1C1002;
+    --yellow-tape-color: #FFE9AB;
+}
+
+body {
+    background-color: #7c1b1c !important;
+}
+
+body h1, h2, p {
+    color: var(--navbar-color);
+}
+
+#main p, span, ul>li {
+    color: var(--navbar-color);
+    line-height: 1.7;
+}
+/*-- -------------------------- -->
+<---          Landing           -->
+<--- -------------------------- -*/
+
+/* #region all screen sizes */
+.red-bars {
+    background-color: var(--reddish-color);
+    position: absolute;
+}
+
+#hero {
+    background: url("/images/Backdrop.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#home-h {
+    text-align: center;
+    font-weight: 800;
+    position: relative;
+    font-size: 2.4em;
+}
+
+/* #endregion */
+
+@media only screen and (min-width: 0px) {
+    
+    section {
+        padding: 0;
+    }
+    
+    body {
+        background-color: var(--card-color);
+        position: relative;
+        top: 130px;
+        z-index: 0;
+    }
+
+    #main {
+        background-color: #7c1b1c;
+        margin-bottom: 50px;
+    }
+    #hero {
+        padding-top: 50px;
+        padding-bottom: 215px;
+    }
+    
+    .hero-container {
+        height: 60vh;
+        text-align: center;
+    }
+
+    .heroText {
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        top: 40%;
+    }
+    
+    #home-h {
+        color: var(--card-color);
+        top: 120px;
+    }
+
+    .red-bars {
+        width: 80%;
+        height: 7px;
+        left: 10%;
+    }
+
+    #top-bar {  
+        top: 100px;
+    }
+
+    #bottom-bar {
+        top: 225px;
+    }
+    
+    #about-hysteria-h2 {
+        display: none;
+    }
+
+    .beige-card {
+        background-color: var(--card-color);
+        padding: 25px;
+        position: relative;
+    }
+
+    .fixed-icons-at-bottom {
+		display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+		justify-content: space-evenly;
+        width: 100%;
+        height: 50px;
+		position: fixed;
+        bottom: 0px;
+		text-align: right;
+	}
+
+	.fixed-icon-at-bottom {
+        width: auto;
+        height: auto;
+        border-radius: none;
+	}
+
+    .fixed-icon-at-bottom:nth-child(1) {
+        background-color: black;
+    }
+
+    .fixed-icon-at-bottom:nth-child(2) {
+        background-color: #00B594;
+    }
+
+    .fixed-icon-at-bottom:nth-child(3) {
+        background-color: #2D41A9;
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 522px) {
+    #home-h {
+        font-size: 2.7em;
+        line-height: 1.1;
+        max-width: 78%;
+        left: 11%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    #mobile-logo {
+        height: 150px;
+        margin-left: 100px;
+    }
+
+    .hamburger-box {
+        margin-right: 40px;
+    }
+
+    #hero {
+        padding-top: 20vh;
+        height: 70vh;
+    }
+
+    #home-h {
+        font-size: 3em;
+        max-width: 80%;
+        left: 10%;
+    }
+    
+    #bottom-bar {
+        top: 235px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .navbar-menu {
+        position: fixed;
+    }
+
+    #on-top > * {
+        font-size: 1rem;
+    }
+
+    .nav-li {
+        cursor: pointer;
+    }
+    
+    .nav-li:hover {
+        color: #7c1b1c;
+        transition: 0.3s ease-out;
+    }
+
+    #main {
+        background-image: url("/images/MainTexture.webp");
+        margin-bottom: 0px;
+    }
+
+    #hero-section {
+        height: 81.4vh;
+    }
+
+    #home-h {
+        font-size: 4em;
+    }
+
+    .red-bars {
+        width: 50%;
+        height: 8px;
+        left: 25%;
+    }
+    #bottom-bar {
+        top: 280px;
+    }
+
+    .yellow-tape {
+        position: absolute;
+        top: -12px;
+        left: 40%;
+        width: 85px;
+        height: 25px;
+        transform:rotate(-3deg);
+        background-color:var(--yellow-tape-color);
+    }
+
+    .fixed-icons-at-bottom {
+        display: none;
+        height: 0;
+        position: absolute;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+
+    .navbar-menu {
+        min-height: 0;
+        height: 80px;
+    }
+
+    .navbar-menu img {
+        width: 140px;
+    }
+
+    #hero {
+        top: 80px;
+    }
+
+    .red-bars {
+        height: 11px;
+        width: 42%;
+        left: 29%;
+    }
+
+    #home-h {
+        font-size: 75px;
+    }
+
+    #bottom-bar {
+        top: 300px;
+    }
+}
+
+
+/*-- ----------------------------------------------------- -->
+<---          About Hysteria + This Week's Shows           -->
+<--- ----------------------------------------------------- -*/
+
+/* #region all screen sizes*/
+
+
+/* #endregion*/
+@media only screen and (min-width: 0px) {
+
+    #the-home-of-alt-comedy-in-dublin {
+        padding: 25px;
+        margin-bottom: 40px;
+        justify-content: center;
+        display: inline-block;
+    }
+
+    #the-home-of-alt-comedy-in-dublin h1 { 
+        font-weight: 800;
+        font-size: 54px;
+    }
+
+    #the-home-of-alt-comedy-in-dublin p, ul>li {
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    #this-weeks-shows {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    #this-weeks-shows h1 {
+        padding-top: 50px;
+        font-size: 32px;
+        font-weight: 800;
+    }
+
+    #this-weeks-shows img {
+        width: 320px;
+        height: 160px;
+        object-fit: cover;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+
+    .show-card {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 30px 40px;
+        box-shadow: 0 1px 1px 0 rgba(60, 64, 67, .08), 0 1px 3px 2px rgba(60, 64, 67, .16);
+        border-radius: 3px;
+        max-width: 320px;
+    }
+
+    .show-card p, span {
+        font-weight: 800;
+    }
+
+    .show-card p {
+        padding: 10px;
+        font-size: 1.3em;
+        line-height: 1.5;
+    }
+
+    .show-card span {
+        font-size: 15px;
+    }
+
+    .button-solid {
+        height: 50px;
+        width: 100%;
+        font-weight: 600;
+    }
+
+    #see-all-events-button {
+        background-color: var(--reddish-color);
+        width: 50%;
+        border-radius: none;
+        margin-top: 15px;
+        text-transform: uppercase;
+    }
+
+}
+@media only screen and (min-width: 768px) {
+    #the-home-of-alt-comedy-in-dublin h1 {
+        font-size: 4em;
+    }
+
+    #the-home-of-alt-comedy-in-dublin ul {
+        padding-left: 10vw;
+    }
+
+    #the-home-of-alt-comedy-in-dublin p {
+        font-size: 1.5em;
+    }
+
+    #this-weeks-shows h1 {
+        font-size: 3em;
+        padding: 20px 0 0;
+        margin: 0 0 20px;
+    }
+
+    #show-cards-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .show-card {
+        margin: 50px 40px;
+    }
+    
+    .show-card:nth-child(5) {
+        margin-bottom: 80px;
+    }
+
+    #get-tickets-button {
+        position: absolute;
+        bottom: -50px; /* to compensate for height of button */
+    }
+}
+@media only screen and (min-width: 1024px) {
+
+    #intro-and-shows-wrap {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #the-home-of-alt-comedy-in-dublin {
+        width: 50%;
+        padding: 4vw;
+        margin-bottom: 0;
+    }
+
+    #the-home-of-alt-comedy-in-dublin h1 {
+        font-size: 3em;
+    }
+
+    #the-home-of-alt-comedy-in-dublin h2 {
+        font-size: 1.4em;
+        padding-left: 10px;
+    }
+
+    #about-hysteria-h2 {
+        display: block;
+    }
+
+    #the-home-of-alt-comedy-in-dublin .red-tape {
+        width: 230px;
+        height: 30px;
+        transform: rotate(1deg);
+    }
+
+    #the-home-of-alt-comedy-in-dublin ul {
+        padding-left: 2vw;
+    }
+
+    #the-home-of-alt-comedy-in-dublin .yellow-tape {
+        display: none;
+    }
+    /* <----------- This weeks shows -----------> */
+
+    #this-weeks-shows {
+        width: 40%;
+    }
+
+    #this-weeks-shows .show-card p {
+        font-size: 1.1em;
+    }
+
+    .show-card:nth-child(4),
+    .show-card:nth-child(5) {
+        display: none;
+    }
+
+    .show-card:nth-child(3) {
+        margin-bottom: 80px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    #the-home-of-alt-comedy-in-dublin {
+        width: 35%;
+
+    }
+
+    #the-home-of-alt-comedy-in-dublin .yellow-tape {
+        display: block;
+    }
+
+    /* <----------- This weeks shows -----------> */
+    #this-weeks-shows {
+        width: 55%;
+    }
+
+    #this-weeks-shows .show-card img {
+        height: 150px;
+        width: 200px;
+        aspect-ratio: 4/3;
+        align-self: center;
+    }
+
+    #this-weeks-shows .show-card p {
+        max-width: 400px;
+        text-align: left;
+    }
+
+    #intro-and-shows-wrap .beige-card:nth-child(2) {
+        padding: 30px 0 0 0;
+    }
+
+    #intro-and-shows-wrap .beige-card {
+        height: auto;
+    }
+
+    .show-card {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        max-width: 100%;
+        height: auto;
+        box-shadow: none;
+    }
+
+    #get-tickets-button {
+        position: relative;
+        bottom: 0;
+        margin: auto 0;
+        max-width: 81px;
+        height: 28px;
+        font-size: 0.9em;
+        text-align: center;
+        line-height: 2;
+    }
+
+    .show-card:nth-child(4),
+    .show-card:nth-child(5) {
+        display: flex;
+    }
+
+    .show-card:nth-child(5) {
+        margin-bottom: 20px;
+    }
+
+    .show-card:nth-child(3) {
+        margin-bottom: auto;
+    }
+
+}
+
+@media only screen and (min-width: 1500px) {
+    .show-card p {
+        padding: 10px 25px;
+    }
+    
+    .show-card p span::after {
+        content: "\a";
+        white-space: pre;
+    }
+
+    #see-all-events-button {
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (min-width: 1800px) {
+
+    /* <-------------- This Weeks Shows --------------> */
+    #the-home-of-alt-comedy-in-dublin {
+        max-width: 520px;
+    }
+
+    #this-weeks-shows {
+        max-width: 1260px;
+        width: auto;
+    }
+
+    #this-weeks-shows .show-card {
+        width: 80%;
+    }
+    #show-cards-wrapper {
+        max-width: 90%;
+        width: 90%;
+    }
+
+    #this-weeks-shows .show-card p {
+        max-width: 80%;
+        padding: 20px;
+        font-size: 1.3em;
+    }
+
+    #see-all-events-button {
+        max-width: 300px;
+    }
+
+}
+/*-- ------------------------------ -->
+<---          About Sin É           -->
+<--- ------------------------------ -*/
+
+@media only screen and (min-width: 0px) {
+    #about-sin-é {
+        font-weight: 800;
+        font-size: 1.3em;
+        margin: 40px 0px;
+    }
+
+    #about-sin-é h1 {
+        font-size: 1.6em;
+        font-weight: 800;
+    }
+
+    .red-tape {
+        width: 190px;
+        height: 35px;
+        font-size: 13px;
+        background-color: var(--reddish-color);
+        margin-top: 30px;
+        transform: rotate(-1.3deg);
+    }
+
+    .red-tape h2 {
+        text-transform: uppercase;
+        font-size: 1.4em;
+        padding-top: 5px;
+        padding-left: 10px;
+        color: var(--card-color);
+        font-weight: 800;
+    }
+
+    #girl {
+        height: 200px;
+    }
+
+}
+@media only screen and (min-width: 768px) {
+    #about-sin-é h1 {
+        font-size: 2em;
+    }
+
+    #girl {
+        height: 40vh;
+    }
+
+}
+@media only screen and (min-width: 1024px) {
+    #about-sin-é .yellow-tape {
+        display: none;
+    }
+
+    #about-sin-é-wrap {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    #about-sin-é {
+        position: absolute;
+        width: 60%;
+        height: 90%;
+        background: transparent;
+    }
+
+    #about-sin-é h1, 
+    #about-sin-é p {
+        color: var(--card-color);
+
+    }
+    #about-sin-é h1 {
+        font-size: 2em;
+    }
+
+    #about-sin-é p {
+        line-height: 2;
+        font-size: 1.1em;
+    }
+
+    #girl {
+        height: auto;
+        min-width: 706px;
+        width: 90%;
+        margin: 40px 0px;
+        max-height: 831px;
+        object-fit: cover;
+        object-position: 50% 50%;
+        filter: blur(7px);
+    }
+
+
+}
+@media only screen and (min-width: 1300px) {
+    #about-sin-é-wrap {
+        display: flex;
+        justify-content: center;
+    }
+
+    #about-sin-é-wrap > *{
+        margin: 50px 40px;
+    }
+
+    #girl {
+        height: auto;
+        min-width: 706px;
+        width: 60%;
+        max-height: 831px;
+        object-fit: cover;
+        object-position: 50% 50%;
+        filter: none;
+    }
+
+    #about-sin-é {
+        width: 30%;
+        height: 831px;
+        padding: 25px 50px;
+        position: static;
+        background: var(--card-color);
+    }
+
+    #about-sin-é h1,
+    #about-sin-é p {
+        color: var(--navbar-color);
+    }
+
+    #about-sin-é .yellow-tape {
+        display: block;
+    }
+    #about-sin-é p {
+        font-size: 0.8em;
+        line-height: 1.8;
+    }
+
+    #about-sin-é h2 {
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+@media only screen and (min-width: 1534px) { /* Fpr About-sin-é title to be 2 words on each line */
+    #about-sin-é .red-tape {
+        position: relative;
+        left: 25%;
+    }
+    
+    #about-sin-é p {
+        font-size: 0.9em;
+    }
+}
+/*-- ---------------------------------------->
+<---          Our Theme Nights             -->
+<--- ---------------------------------------*/
+
+@media only screen and (min-width: 0px) {
+
+    #our-theme-nights {
+        text-align: center;
+    }
+
+    #our-theme-nights h1 {
+        padding-left: 50px;
+        text-align: left;
+        font-size: 60px;
+        color: var(--card-color);
+        font-weight: 800;
+        line-height: 1.5;
+    }
+
+    #our-theme-nights .beige-card img {
+        height: 225px;
+        width: 225px;
+    }
+
+    #our-theme-nights .beige-card {
+        margin: 30px 0px;
+    }
+
+    #our-theme-nights p {
+        font-weight: 800;
+        line-height: 2;
+        font-size: 1.3em;
+    }
+}
+@media only screen and (min-width: 768px) {
+
+}
+@media only screen and (min-width: 1024px) {
+
+    .our-theme-nights-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        columns: 2; 
+    }
+
+    .our-theme-nights-card {
+        padding-top: 50px;
+        width: 40%;
+    }
+
+    .our-theme-nights-wrap .yellow-tape {
+        width: 70px;
+        left: 44%;
+    }
+
+    .our-theme-nights-wrap .beige-card:nth-child(1) .yellow-tape {
+        transform: rotate(80deg);
+    }
+    
+    .our-theme-nights-wrap .beige-card:nth-child(2) .yellow-tape {
+        transform: rotate(87deg);
+    }
+
+    .our-theme-nights-wrap .beige-card:nth-child(3) .yellow-tape {
+        transform: rotate(94deg);
+    }
+
+    .our-theme-nights-wrap .beige-card:nth-child(4) .yellow-tape {
+        transform: rotate(80deg);
+    }
+
+}
+@media only screen and (min-width: 1300px) {
+
+}
+
+@media only screen and (min-width: 1500px) {
+    .our-theme-nights-wrap {
+        flex-wrap: nowrap;
+        margin: 10px 30px;
+    }
+    
+    .our-theme-nights-card {
+        max-width: 23%;
+    }
+
+    .our-theme-nights-card p {
+        padding: 20px 15px;
+    }
+}
+
+/*-- ---------------------------------------->
+<---                 Map                   -->
+<--- ---------------------------------------*/
+
+@media only screen and (min-width: 0px) {
+    .map h1 {
+        font-size: 2.7em;
+        color: var(--card-color);
+        margin: 40px 0px;
+    }
+
+    #map {
+        width: 100%;
+        margin-bottom: none;
+        padding: 0;
+
+    }
+    
+    #map-section {
+        padding: 0;
+        margin: 0;
+    }
+
+}
+@media only screen and (min-width: 768px) {
+
+}
+@media only screen and (min-width: 1024px) {
+
+}
+@media only screen and (min-width: 1300px) {
+
+}
+
+/*-- ---------------------------------------->
+<---                Contact                -->
+<--- ---------------------------------------*/
+
+@media only screen and (min-width: 0px) {
+    .contact {
+        background-color: var(--navbar-color);
+        text-align: center;
+        margin: 0;
+        position: relative;
+        bottom: 6px;
+    }
+
+    .contact .red-tape {
+        margin: 0px auto 30px auto;
+        transform: none;
+        height: 70px;
+        width: 370px;
+    }
+
+    .contact h1, .contact .red-tape {
+        font-size: 2.4em;
+        text-transform: uppercase;
+    }
+
+    .contact h1 {
+        padding-top: 20px;
+        letter-spacing: 2px;
+    }
+
+    .contact .red-tape {
+        padding-top: 5px;
+    }
+
+    #contact-section .contact div,
+    #contact-section .contact h1,
+    #contact-section .contact p {
+        color: var(--card-color);
+    }
+
+    .contact p {
+        text-align: center;
+        padding: 0px 20px 30px 20px;
+        line-height: 2;
+        font-size: 1.3em;
+    }
+
+    #contact-section {
+        padding: 0;
+    }
+}
+@media only screen and (min-width: 768px) {
+
+}
+@media only screen and (min-width: 1024px) {
+
+}
+@media only screen and (min-width: 1300px) {
+
+}
+
+
+/*-- --------------------------------------------->
+<---                Social-icons               SHOULD REALLY BE IN THE NAVIGATION SECITON THAT I SHOULD HAVE -->
+<--- --------------------------------------------*/
+
+@media only screen and (min-width: 0px) {
+
+}
+@media only screen and (min-width: 768px) {
+
+}
+@media only screen and (min-width: 1024px) {
+    .social-icons .social-icon-link {
+        font-size: 1.2em;
+    }
+}
+@media only screen and (min-width: 1300px) {
+
+}
+
+
+
+/* CREDIT LOLLL */
+@media only screen and (min-width: 0px) {
+    #credit {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #credit {
+        display: block;
+        color: var(--card-color);
+        text-align: center;
+        font-size: 1em;
+    }
+}

@@ -30,10 +30,10 @@ body h1, h2, p {
 
 #hero {
     /* 4 LINES BELOW - Moved to 0px and 1024px for implementation of img srcset ish*/
-    /* background: url("/images/Backdrop25percent.webp"); 
+    background: url("/images/Backdrop15percent.webp"); 
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     text-align: center;
 }
 
@@ -69,10 +69,6 @@ body h1, h2, p {
     #hero {
         padding-top: 50px;
         padding-bottom: 215px;
-        background: url("/images/Backdrop15percent.webp");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
     }
     
     .hero-container {
@@ -220,6 +216,7 @@ body h1, h2, p {
         background-size: cover;
         background-repeat: no-repeat;
     }
+    
     #home-h {
         font-size: 4em;
     }
@@ -942,6 +939,7 @@ body h1, h2, p {
         margin: 0;
         position: relative;
         bottom: 6px;
+        font-weight: 800;
     }
 
     .contact .red-tape {
@@ -1027,5 +1025,6 @@ body h1, h2, p {
         color: var(--card-color);
         text-align: center;
         font-size: 1em;
+        font-weight: 800;
     }
 }

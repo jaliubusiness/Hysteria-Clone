@@ -29,10 +29,11 @@ body h1, h2, p {
 }
 
 #hero {
-    background: url("/images/Backdrop25percent.webp");
+    /* 4 LINES BELOW - Moved to 0px and 1024px for implementation of img srcset ish*/
+    /* background: url("/images/Backdrop25percent.webp"); 
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     text-align: center;
 }
 
@@ -68,6 +69,10 @@ body h1, h2, p {
     #hero {
         padding-top: 50px;
         padding-bottom: 215px;
+        background: url("/images/Backdrop15percent.webp");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     
     .hero-container {
@@ -209,6 +214,12 @@ body h1, h2, p {
         height: 81.4vh;
     }
 
+    #hero {
+        background: url("/images/Backdrop25percent.webp");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     #home-h {
         font-size: 4em;
     }

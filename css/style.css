@@ -210,13 +210,6 @@ body h1, h2, p {
         height: 81.4vh;
     }
 
-    #hero {
-        background: url("/images/Backdrop25percent.webp");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    
     #home-h {
         font-size: 4em;
     }

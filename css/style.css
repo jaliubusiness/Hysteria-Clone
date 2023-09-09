@@ -574,6 +574,7 @@ body h1, h2, p {
     }
 
 }
+
 /*-- ------------------------------ -->
 <---          About Sin É           -->
 <--- ------------------------------ -*/
@@ -581,10 +582,11 @@ body h1, h2, p {
 @media only screen and (min-width: 0px) {
     #about-sin-é {
         font-weight: 800;
-        font-size: 1.3em;
+        font-size: 1.1em;
         margin: 60px 0px 100px 10px;
         position: absolute;
         background: transparent;
+        padding: 100px 50px 0px 50px;
     }
 
     #about-sin-é h1 {
@@ -631,6 +633,26 @@ body h1, h2, p {
 
 
 }
+
+@media only screen and (min-width: 470px) {
+    #about-sin-é {
+        font-size: 1.2em;
+    }
+
+}
+
+@media only screen and (min-width: 540px) {
+    #about-sin-é {
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    #about-sin-é {
+        font-size: 1.4em;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     #about-sin-é h1 {
         font-size: 2em;
@@ -647,10 +669,8 @@ body h1, h2, p {
     }
 
     #about-sin-é {
-        position: absolute;
-        width: 60%;
-        background: transparent;
-        padding-top: 40px;
+        width: 70%;
+        padding-top: 80px;
     }
 
     #about-sin-é h1, 
@@ -681,6 +701,7 @@ body h1, h2, p {
 
     #about-sin-é {
         height: 90%;
+        width: 80%;
     }
 
     #about-sin-é h1, 
@@ -728,7 +749,7 @@ body h1, h2, p {
     #about-sin-é {
         width: 30%;
         height: 831px;
-        padding: 25px 50px;
+        padding: 25px 32px;
         position: relative;
         background: var(--card-color);
     }

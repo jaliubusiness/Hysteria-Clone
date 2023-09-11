@@ -395,7 +395,7 @@
 	
 	.navbar-menu {
 		background: #7c1b1c;
-		width: 0;
+		width: 0 !important; /* to overwrite element.style { width: 60% } which I have no idea where it comes from */
 		position: fixed;
 		right: 0;
 		height: 100%;
@@ -571,7 +571,7 @@
 	}
 
 	.navbar-menu {
-		width: 100%;
+		width: 100% !important;
 		min-height: 100px;
 		height: 100px;
 		margin: auto;

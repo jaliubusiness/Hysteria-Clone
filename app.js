@@ -8,7 +8,7 @@ var currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
-
+const hamburger = document.querySelector('.hamburger');
 const hamburgerBox = document.querySelector('.hamburger-box');
 const navbarMenu = document.querySelector('.navbar-menu');
 const mobileNav = document.querySelector('.mobile-nav')
@@ -23,110 +23,73 @@ const mobileNav = document.querySelector('.mobile-nav')
     var element = document.getElementById("hero-section");
     element.scrollIntoView({behavior: "smooth"});
     toggleNavbarMenuAndOpacity();
+    restoreHamburger();
+    toggleNav();
   }
 
   function scrollToInfo () {
     var element = document.getElementById("the-home-of-alt-comedy-in-dublin");
     element.scrollIntoView({behavior: "smooth"});
     toggleNavbarMenuAndOpacity();
+    restoreHamburger();
+    toggleNav();
   }
 
   function scrollToShows () {
     var element = document.getElementById("this-weeks-shows");
     element.scrollIntoView({behavior: "smooth"});
     toggleNavbarMenuAndOpacity();
+    restoreHamburger();
+    toggleNav();
   }
 
   function scrollToContact () {
     var element = document.getElementById("contact-section");
     element.scrollIntoView({behavior: "smooth"});
     toggleNavbarMenuAndOpacity();
+    restoreHamburger();
+    toggleNav();
   }
 
 const main = document.querySelector('#main');
-hamburgerBox.addEventListener('click', function() {
+hamburger.addEventListener('click', function() {
   toggleNavbarMenuAndOpacity();
-  mobileNav.classList.toggle('mobile-nav-fixed');
 })
 
+let getSidebarVisibility = document.querySelector(".side-nav");
+
+function restoreHamburger() {
+  getSidebarVisibility.style.visibility = "hidden";
+}
+
+let toggleNavStatus = false;
+
 function toggleNavbarMenuAndOpacity() {
-  if(window.innerWidth > 1024) // don't want navbar-menu to be active nor do i want opacity at this width and beyond.
+  if(window.innerWidth >= 1024) // don't want navbar-menu to be active nor do i want opacity at this width and beyond.
   return;
 
   main.classList.toggle('opacity-class');
   navbarMenu.classList.toggle('navbar-menu-active');
 }
 
-function myFunction() {
-  // Your code here
-  console.log("IM HAVING SO MUCH FUN");
-  // let temp = document.querySelector(".navbar-menu");
-  // temp.classList.remove("side-nav");
-}
-
-const mediaQuery = window.matchMedia("(min-width: 1024px)");
-
-function handleViewportChange(event) {
-  if (event.matches) {
-    myFunction();
-  }
-}
-
-// Check the initial viewport width
-handleViewportChange(mediaQuery);
-
-// Add an event listener to check for changes in viewport width
-mediaQuery.addEventListener("change", handleViewportChange);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let toggleNavStatus = false;
-
 let toggleNav = function () {
     let getSidebar = document.querySelector(".navbar-menu");
-    let getSidebarUL = document.querySelector(".side-nav ul");
     let getSidebarLinks = document.querySelectorAll(".side-nav a");
-    let getSidebarVisibility = document.querySelector(".side-nav");
-    var htmlGrab = document.querySelector("html");
-    const hamburger = document.querySelector('.hamburger');
 
     hamburger.classList.toggle('is-active');
 
     if (toggleNavStatus === false) {
 
-      getSidebarVisibility.style.visibility = "visible"
+      getSidebarVisibility.style.visibility = "visible";
 
       getSidebarLinks.forEach((item, index)=>{
         console.log(item);
         item.style.opacity = "1";
         item.style.visibility = "visible";
         });
-      getSidebar.style.width = "60%";
-      htmlGrab.classList.add("clicked");
+      getSidebar.style.width = "80%";
+      console.log("clicked");
       toggleNavStatus = true;
-      servicesUL.classList.add("clicked");
     } 
 
     else if (toggleNavStatus === true) {
@@ -137,9 +100,8 @@ let toggleNav = function () {
           item.style.visibility = "hidden";
          });
         getSidebar.style.width = "0";
-        htmlGrab.classList.remove("clicked");
+        console.log("unclicked");
         toggleNavStatus = false;
-        servicesUL.classList.remove("clicked");
     }
 }
 
@@ -147,22 +109,22 @@ let toggleNav = function () {
 // ------------------------------------------------- DARK MODE -----------------------------
 
 /* Body and Core Elements */
-var body = document.querySelector("body");
+// var body = document.querySelector("body");
 
 // Dark Mode Action
-let darkMode = localStorage.getItem("darkMode");
-const darkModeToggle = document.querySelector('.dark-mode-button');
+// let darkMode = localStorage.getItem("darkMode");
+// const darkModeToggle = document.querySelector('.dark-mode-button');
 // for an optional footer dark mode button as well
-const darkModeToggleFooter = document.querySelector('footer .dark-mode-button');
+// const darkModeToggleFooter = document.querySelector('footer .dark-mode-button');
 
 // This is where you add the dakr mode class.  When the dark mode is enabled as true in localstorage,
 // it will add all the dark-mode classes to the elements we created in the variables above
-const enableDarkMode = () => {
+// const enableDarkMode = () => {
 
 // Core dark mode styles
-body.classList.add("dark-mode");
-localStorage.setItem("darkMode", "enabled")
-}
+// body.classList.add("dark-mode");
+// localStorage.setItem("darkMode", "enabled")
+// }
 
 // This is where we remove dark mode.  Just copy and paste all the lines where you added a class
 // and paste them into this function, then change "addClass" to "removeClass"

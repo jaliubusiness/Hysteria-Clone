@@ -804,7 +804,7 @@ body h1, h2, p {
     }
 
     #our-theme-nights h1 {
-        padding-left: 50px;
+        padding-left: 30px;
         text-align: left;
         font-size: 60px;
         color: var(--card-color);

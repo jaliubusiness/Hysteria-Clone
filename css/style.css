@@ -356,6 +356,7 @@ body h1, h2, p {
         height: 50px;
         width: 100%;
         font-weight: 600;
+        margin-top: auto;
     }
 
     #see-all-events-button {
@@ -400,10 +401,6 @@ body h1, h2, p {
         margin-bottom: 80px;
     }
 
-    .get-tickets-button {
-        position: absolute;
-        bottom: -50px; /* to compensate for height of button */
-    }
 }
 @media only screen and (min-width: 1024px) {
 

@@ -6,10 +6,10 @@
     --yellow-tape-color: #FFE9AB;
 }
 
-/* @font-face {
+@font-face {
     font-family: "Poppins";
     src: url("/Fonts/Poppins/Poppins-ExtraBold.ttf");
-} */
+}
 
 body {
     background-color: #7c1b1c !important;

@@ -19,36 +19,49 @@ const mobileNav = document.querySelector('.mobile-nav')
   document.getElementById("Shows-scroll").addEventListener("click", scrollToShows);
   document.getElementById("Contact-scroll").addEventListener("click", scrollToContact);
 
+  function under1024px() {
+    return window.innerWidth < 1024;
+  }
+
   function scrollToHome () {
     var element = document.getElementById("hero-section");
     element.scrollIntoView({behavior: "smooth"});
     toggleNavbarMenuAndOpacity();
-    restoreHamburger();
-    toggleNav();
+    if(under1024px()) {
+      restoreHamburger();
+      toggleNav();
+    }
   }
 
   function scrollToInfo () {
     var element = document.getElementById("the-home-of-alt-comedy-in-dublin");
     element.scrollIntoView({behavior: "smooth"});
     toggleNavbarMenuAndOpacity();
-    restoreHamburger();
-    toggleNav();
+    if(under1024px()) {
+      restoreHamburger();
+      toggleNav();
+    }
   }
 
   function scrollToShows () {
     var element = document.getElementById("this-weeks-shows");
     element.scrollIntoView({behavior: "smooth"});
     toggleNavbarMenuAndOpacity();
-    restoreHamburger();
-    toggleNav();
+    if(under1024px()) {
+      restoreHamburger();
+      toggleNav();
+      console.log("SHOWS UNDER 1024px")
+    }
   }
 
   function scrollToContact () {
     var element = document.getElementById("contact-section");
     element.scrollIntoView({behavior: "smooth"});
     toggleNavbarMenuAndOpacity();
-    restoreHamburger();
-    toggleNav();
+    if(under1024px()) {
+      restoreHamburger();
+      toggleNav();
+    }
   }
 
 const main = document.querySelector('#main');

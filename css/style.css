@@ -9,6 +9,7 @@
 @font-face {
     font-family: "Poppins";
     src: url("/Fonts/Poppins/Poppins-ExtraBold.ttf");
+    font-display: swap;
 }
 
 body {

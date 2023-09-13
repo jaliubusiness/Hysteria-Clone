@@ -769,13 +769,19 @@ body h1, h2, p {
         
     }
     #about-sin-é p {
-        font-size: 0.8em;
+        font-size: 0.75em;
         line-height: 1.8;
     }
 
     #about-sin-é h2 {
         text-align: center;
         padding-left: 0;
+    }
+}
+
+@media only screen and (min-width: 1400px) { 
+    #about-sin-é p {
+        font-size: 0.8em;
     }
 }
 

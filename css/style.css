@@ -791,17 +791,16 @@ body h1, h2, p {
         position: relative;
         left: 25%;
     }
-    
+
+    #about-sin-é h1 {
+        padding: 20px 25px;
+    }
+
     #about-sin-é p {
-        font-size: 0.9em;
+        padding: 0px 25px;
     }
 }
 
-@media only screen and (min-width: 1800px) {
-    #about-sin-é p {
-        font-size: 1em;
-    }
-}
 /*-- ---------------------------------------->
 <---          Our Theme Nights             -->
 <--- ---------------------------------------*/
